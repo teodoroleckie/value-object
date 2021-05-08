@@ -46,15 +46,6 @@ $john->equals(new FirstName('Mario')); // false
 $raquel->value();       // "34"
 ```
 
-
-### Support for polymorphic behavior:
-```php
-public function handle(ValueObjectInterface $object){
-    // ...
-}
-
-```
-
 ### Force primitive type:
 Override value() method to indicate the return primitive type.
 ```php
