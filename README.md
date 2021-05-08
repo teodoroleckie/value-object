@@ -18,17 +18,34 @@ class Age extends ValueObject
 {
 
 }
+```
+
+### Compare value-objects:
+```php
+<?php
+
+/**
+ * Class Age
+ */
+class Age extends ValueObject
+{
+
+}
 
 $john = new Age(34);
 $mario = new Age(34);
 $raquel = new Age("34");
 
+
 $john->equals($mario);  // true
 
 $john->equals($raquel); // false
 
+$john->equals(new FirstName('Mario')); // false
+
 $raquel->value();       // "34"
 ```
+
 
 ### Support for polymorphic behavior:
 ```php
