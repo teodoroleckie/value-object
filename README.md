@@ -56,7 +56,7 @@ public function handle(ValueObjectInterface $object){
 ```
 
 ### Force primitive type:
-Override the constructor and value() method to indicate the return primitive type.
+Override value() method to indicate the return primitive type.
 ```php
 <?php
 
@@ -65,15 +65,6 @@ Override the constructor and value() method to indicate the return primitive typ
  */
 class Age extends ValueObject
 {
-    /**
-    * Age constructor.
-    * @param int $value
-    */
-    public function __construct(int $value)
-    {
-        parent::__construct($value);
-    }
-    
     /**
     * @return int
     */
@@ -87,7 +78,9 @@ $raquel = new Age("34");
 $mario = new Age(34);
 
 $raquel->value();        // int 34
+
 $mario->equals($raquel); // true
+
 (string)$mario;          // string "34"
 
 ```
