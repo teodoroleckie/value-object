@@ -56,7 +56,7 @@ public function handle(ValueObjectInterface $object){
 ```
 
 ### Force primitive type:
-Override the constructor, and the value() method to indicate the return primitive type.
+Override the constructor and value() method to indicate the return primitive type.
 ```php
 <?php
 
