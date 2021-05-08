@@ -28,6 +28,6 @@ class NullableValueObject extends ValueObject
      */
     public function __toString(): string
     {
-        return \sprintf('%s', $this->value) ;
+        return \sprintf('%s', $this->value);
     }
 }
