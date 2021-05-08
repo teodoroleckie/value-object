@@ -1,4 +1,4 @@
-# PHP Library to implement value-object / nullable-value-object
+# Library to implement value-object / nullable-value-object in PHP
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/teodoroleckie/value-object/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/value-object/?branch=main)
 [![Build Status](https://scrutinizer-ci.com/g/teodoroleckie/value-object/badges/build.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/value-object/build-status/main)
