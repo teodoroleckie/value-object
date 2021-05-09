@@ -22,12 +22,4 @@ class NullableValueObject extends ValueObject
     {
         $this->value = $value;
     }
-
-    /**
-     * @inheritdoc
-     */
-    public function __toString(): string
-    {
-        return \sprintf('%s', $this->value);
-    }
 }

@@ -36,7 +36,7 @@ class ValueObject implements ValueObjectInterface
      */
     final public function equals(ValueObjectInterface $value): bool
     {
-        return $this->value === $value->value();
+        return $this->value() === $value->value();
     }
 
     /**
@@ -44,6 +44,6 @@ class ValueObject implements ValueObjectInterface
      */
     public function __toString(): string
     {
-        return $this->value;
+        return \sprintf('%s', $this->value);
     }
 }
