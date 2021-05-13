@@ -1,7 +1,7 @@
 {
   "name": "tleckie/value-object",
   "license": "MIT",
-  "description": "PHP value-object",
+  "description": "PHP value-object. Library to implement value-object / nullable-value-object in PHP",
   "type": "library",
   "homepage": "https://github.com/teodoroleckie/value-object",
   "authors": [
